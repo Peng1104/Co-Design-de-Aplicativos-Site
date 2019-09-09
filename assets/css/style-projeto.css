@@ -68,6 +68,7 @@
   background-color: #DDDDDD;
   align-self: center;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
 }
 
 .subbloco1 {
@@ -98,6 +99,7 @@
 }
 .h2_b1 {
   font-family: 'Cinzel', sans-serif;
+  font-size: 1.5rem; 
 }
 
 .h2_b2 {
@@ -107,6 +109,7 @@
   margin: 20px;
   justify-content: center;
   font-family: 'Cinzel', sans-serif;
+  font-size: 1.5rem
 
 }
 

@@ -42,6 +42,7 @@
   background-color: #DDDDDD;
   align-self: center;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
   
 }
 .texto {
@@ -108,6 +109,8 @@
   align-items: center;
   background-color: #7ADCE8;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  
 }
 .img_cat {
   border-radius: 4.6rem;
@@ -141,6 +144,7 @@
   border-style: solid;
   border-width: 0.1rem;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
 }
 .cat2_titulo {
   grid-area: cat2_titulo;
@@ -151,6 +155,7 @@
   border-style: solid;
   border-width: 0.1rem;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
 }
 .cat3_titulo {
   grid-area: cat3_titulo;
@@ -161,6 +166,7 @@
   border-style: solid;
   border-width: 0.1rem;
   font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
 }
 .intro {
   font-family: 'Cinzel', serif;
