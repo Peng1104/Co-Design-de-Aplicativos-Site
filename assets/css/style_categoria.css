@@ -1,0 +1,207 @@
+.body {
+  background-color: #CAE9FD;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.blocos {
+  display: flex;
+  flex-direction: row;
+}
+.bloco1 {
+  
+}
+.bloco2 {
+  margin-left: 0.2rem;
+  border-left: 0.1rem;
+  border-style: solid;
+  border-color: black;
+
+  display: grid;
+
+  grid-template-rows: 20% 80%;
+
+  grid-template-areas: 
+  "titulo"
+  "projetos";
+}
+.txt_projeto {
+  grid-area: txt_projeto;
+  bottom: 5rem;
+  left: 2rem;
+  padding: 1rem;
+  border-radius: 30rem;
+
+  background-color: #7ADCE8;
+  font-family: 'Lato', sans-serif;
+}
+.img_projeto {
+  grid-area: img_projeto;
+  border-radius: 30rem;
+
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #2B35B3;
+}
+.titulo_projeto {
+  grid-area: titulo_projeto;
+  
+  font-size: 1.2rem;
+
+  text-align: center;
+
+  border-style: solid;
+  border-radius: 30rem;
+  border-width: 0.1rem;
+
+  padding: 0.3rem;
+  background-color: #DDDDDD;
+  font-family: 'Cinzel', serif;
+}
+.projeto4 {
+  grid-area: projeto4;
+
+  justify-content: center;
+  align-items: center;
+  display: grid;
+
+  grid-template-areas: 
+  "titulo_projeto titulo_projeto"
+  "img_projeto txt_projeto";
+}
+.projeto3 {
+  grid-area: projeto3;
+
+  justify-content: center;
+  align-items: center;
+  display: grid;
+
+  grid-template-areas: 
+  "titulo_projeto titulo_projeto"
+  "img_projeto txt_projeto";
+}
+.projeto2 {
+  grid-area: projeto2;
+
+  justify-content: center;
+  align-items: center;
+  display: grid;
+
+  grid-template-areas: 
+  "titulo_projeto titulo_projeto"
+  "img_projeto txt_projeto";
+}
+.projeto1 {
+  grid-area: projeto1;
+
+  justify-content: center;
+  align-items: center;
+  display: grid;
+
+  grid-template-areas: 
+  "titulo_projeto titulo_projeto"
+  "img_projeto txt_projeto";
+}
+.projetos {
+  grid-area: projetos;
+
+  display: grid;
+
+  grid-template-areas:
+  "projeto1 projeto2"
+  "projeto3 projeto4";
+}
+.txt_titulo {
+  background-color: #7ADCE8;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.3rem 15rem;
+  font-family: 'Cinzel', serif;
+}
+.titulo {
+  grid-area: titulo;
+  align-self: center;
+  font-family: 'Cinzel', serif;
+  background-color: #2B35B3;
+}
+.nome_categoria {
+  position: relative;
+  font-size: 1.5rem;
+  bottom: 5rem;
+  left: 50%;
+  font-family: 'Cinzel', serif;
+}
+.descricao_categoria {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
+}
+.img_categoria {
+  position: relative;
+  top: 1.2rem;
+  left: 13%;
+}
+.categoria {
+  grid-area: categoria;
+  background-color: #7ADCE8;
+  border-radius: 2rem;
+}
+.img_perfil {
+  z-index: 3;
+  position: relative;
+  border-style: solid;
+  border-radius: 60rem;
+  border-width: 0.1rem;
+  margin: 0rem 0rem 0rem -2.8rem;
+}
+.img_index {
+  z-index: 2;
+  position: relative;
+  border-style: solid;
+  border-radius: 30rem;
+  border-width: 0.1rem;
+}
+.autor_name {
+  z-index: 1;
+  position: relative;
+  bottom: 1.8rem;
+  font-size: 3rem;
+  display: inline-block;
+  border-style: solid;
+  border-radius: 30rem;
+  border-width: 0.1rem;
+  margin: 0rem 0rem 0rem -5rem;
+  padding: 1rem 1rem 1rem 5rem;
+  background-color: #DDDDDD;
+  font-family: 'Cinzel', serif;
+}
+.logo {
+  grid-area: logo;
+}
+.contato {
+  grid-area: contato;
+  background-color: #FF1E01;
+}
+.tela {
+  background-color: #CAE9FD;
+
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 95% 5%;
+
+  grid-template-areas:
+  "bloco1 bloco2"
+  "contato contato";
+}
+.contato_txt {
+  font-family: 'Lato', sans-serif;
+}
