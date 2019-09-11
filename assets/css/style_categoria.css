@@ -1,17 +1,14 @@
 .body {
   background-color: #CAE9FD;
-
-  width: 100vw;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 .blocos {
   display: flex;
   flex-direction: row;
 }
 .bloco1 {
-  
+  max-width: 50%;
 }
 .bloco2 {
   margin-left: 0.2rem;
@@ -148,7 +145,6 @@
   left: 13%;
 }
 .categoria {
-  grid-area: categoria;
   background-color: #7ADCE8;
   border-radius: 2rem;
 }
@@ -185,23 +181,60 @@
   grid-area: logo;
 }
 .contato {
-  grid-area: contato;
   background-color: #FF1E01;
-}
-.tela {
-  background-color: #CAE9FD;
-
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 95% 5%;
-
-  grid-template-areas:
-  "bloco1 bloco2"
-  "contato contato";
+  display: flex;
+  justify-content: center;
 }
 .contato_txt {
   font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 360px) {
+  .body {
+    display: block;
+    position: relative;
+    background-color: #CAE9FD;
+  }
+  .bloco2 {
+    display: block;
+    border-width: 0px;
+  }
+  .tela {
+    display: block;
+  }
+  .blocos {
+    display: block;
+    max-width: 100%;
+  }
+  .logo {
+    display: block;
+  }
+  .categoria {
+    display: block;
+  }
+  .bloco1 {
+    max-width: 100%;
+  }
+  .contato {
+    border-style: solid;
+    position: relative;
+    border-width: 2px;
+    grid-area: 10/1 / 11/11;
+    background-color: #FF1E01;
+    padding: 5px 0px 0px 0px;
+  }
+  .projetos {
+    display: block;
+  }
+  .txt_titulo {
+    background-color: #7ADCE8;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.3rem 1rem;
+    font-family: 'Cinzel', serif;
+  }
+  .titulo {
+    margin: 1/16rem;
+  }
 }
