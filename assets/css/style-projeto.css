@@ -194,7 +194,7 @@
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
   .tela {
     position: relative;
     background-color: #CAE9FD;

@@ -189,7 +189,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
   .body {
     display: block;
     position: relative;
