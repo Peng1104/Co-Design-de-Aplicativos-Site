@@ -8,13 +8,14 @@
   flex-direction: row;
 }
 .bloco1 {
-  max-width: 50%;
+  width: 50%;
 }
 .bloco2 {
   margin-left: 0.2rem;
   border-left: 0.1rem;
   border-style: solid;
   border-color: black;
+  width: 50%;
 
   display: grid;
 
@@ -57,42 +58,7 @@
   background-color: #DDDDDD;
   font-family: 'Cinzel', serif;
 }
-.projeto4 {
-  grid-area: projeto4;
-
-  justify-content: center;
-  align-items: center;
-  display: grid;
-
-  grid-template-areas: 
-  "titulo_projeto titulo_projeto"
-  "img_projeto txt_projeto";
-}
-.projeto3 {
-  grid-area: projeto3;
-
-  justify-content: center;
-  align-items: center;
-  display: grid;
-
-  grid-template-areas: 
-  "titulo_projeto titulo_projeto"
-  "img_projeto txt_projeto";
-}
-.projeto2 {
-  grid-area: projeto2;
-
-  justify-content: center;
-  align-items: center;
-  display: grid;
-
-  grid-template-areas: 
-  "titulo_projeto titulo_projeto"
-  "img_projeto txt_projeto";
-}
-.projeto1 {
-  grid-area: projeto1;
-
+.projeto {
   justify-content: center;
   align-items: center;
   display: grid;
@@ -105,10 +71,9 @@
   grid-area: projetos;
 
   display: grid;
-
   grid-template-areas:
-  "projeto1 projeto2"
-  "projeto3 projeto4";
+  "projeto projeto"
+  "projeto projeto"; 
 }
 .txt_titulo {
   background-color: #7ADCE8;
