@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
   */
 
   db.download("portfolio", function(data) {
-    coDesReplace(".descricao_categoria", data["fisico"])
-    coDesReplace(".projetos", data["fisico"])
+    coDesReplace(".bloco2", data)
   })
 })

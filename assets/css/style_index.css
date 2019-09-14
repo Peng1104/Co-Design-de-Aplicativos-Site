@@ -178,13 +178,10 @@
     position: relative;
     background-color: #CAE9FD;
   }
-
-  
   .bloco2 {
     display: block;
     border-width: 0px;
   }
-
   .contato {
     border-style: solid;
     position: relative;
@@ -193,14 +190,12 @@
     background-color: #FF1E01;
     padding: 5px 0px 0px 0px;
   }
-
   .header {
     display: flex;
     align-items: center;
     justify-content: stretch;
     margin: 0rem 0rem 1rem 0rem;
   }
-
   .img_perfil {
     z-index: 2;
     position: relative;
@@ -212,11 +207,9 @@
 
     margin: 0px 0px 0px 0px;
   }
-
   .img_menu {
     display: none;
   }
-
   .name {
     z-index: 0;
     border-style: solid;
@@ -226,9 +219,7 @@
     align-self: center;
     margin: 1rem 0rem 0rem 1rem;
     font-family: 'Cinzel', serif;
-
   }
-
   .img_cat {
     position: relative;
     border-radius: 10rem;
@@ -238,7 +229,6 @@
     top: 0.3rem;
     left: 0.3rem;
   }
-
   .texto {
     display: flex;
     flex-flow: row wrap;
@@ -330,6 +320,4 @@
   .intro {
     font-family: 'Cinzel', serif;
   }
-
-
 }
