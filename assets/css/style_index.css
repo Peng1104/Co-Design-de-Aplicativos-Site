@@ -172,7 +172,7 @@
   font-family: 'Cinzel', serif;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
   .tela {
     display: block;
     position: relative;

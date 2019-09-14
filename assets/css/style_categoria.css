@@ -1,10 +1,7 @@
 .body {
   background-color: #CAE9FD;
-
-  width: 100vw;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 .blocos {
   display: flex;
@@ -113,7 +110,6 @@
   left: 13%;
 }
 .categoria {
-  grid-area: categoria;
   background-color: #7ADCE8;
   border-radius: 2rem;
 }
@@ -150,8 +146,9 @@
   grid-area: logo;
 }
 .contato {
-  grid-area: contato;
   background-color: #FF1E01;
+  display: flex;
+  justify-content: center;
 }
 .contato_txt {
   font-family: 'Lato', sans-serif;
