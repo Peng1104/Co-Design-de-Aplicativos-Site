@@ -7,16 +7,30 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   /*
-    A função coDesConnect cria uma conexão com o Firebase.
+    Cria uma conexão com o Firebase.
   */
 
   let db = coDesConnect("https://portfolio-5298e.firebaseio.com/")
+
   /*
-   CAPTURAS DOS DADOS
+    Captura os parametros.
+  */
+
+  let parametros = coDesExtract()
+
+  /*
+    Muda o titulo da pagina
+  */
+
+  window.document.title = parametros["categoria"].toUpperCase();
+
+  /*
+   Muda os valores dentro do html.
   */
 
   db.download("portfolio", function(data) {
-    coDesReplace(".descricao_categoria", data["fisico"])
-    coDesReplace(".projetos", data["fisico"])
+    coDesReplace(".h2_b1", parametros["categoria"])
+    coDesReplace(".texto1", data[parametros["categoria"]])
+    coDesReplace(".projetos", data[parametros["categoria"]])
   })
 })
