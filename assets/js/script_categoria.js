@@ -16,21 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
     Captura os parametros.
   */
 
-  let parametros = coDesExtract()
+  let categoria = coDesExtract()["categoria"]
 
   /*
     Muda o titulo da pagina
   */
 
-  window.document.title = parametros["categoria"].toUpperCase();
+  window.document.title = categoria.charAt(0).toUpperCase() + categoria.slice(1)
 
   /*
    Muda os valores dentro do html.
   */
 
   db.download("portfolio", function(data) {
-    coDesReplace(".h2_b1", parametros["categoria"])
-    coDesReplace(".texto1", data[parametros["categoria"]])
-    coDesReplace(".projetos", data[parametros["categoria"]])
+    coDesReplace(".h2_b1", categoria)
+    coDesReplace(".texto1", data[categoria])
+    coDesReplace(".projetos", data[categoria])
   })
 })
