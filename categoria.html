@@ -12,48 +12,116 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>  
-  <body class="body">
-    <div class="blocos">
+  <body>
+    <div class="tela">
       <div class="bloco1">
-        <header class="logo">
-          <img class="img_index" src="https://picsum.photos/60/60/?random" alt="Imagem para voltar ao index">
-          <img class="img_perfil" src="https://picsum.photos/120/120/?random=1" alt="Imagem do perfil">
-          <h1 class="autor_name"> ienseS onulA</h1>
-        </header>
-        <div class="categoria">
-          <img class="img_categoria" src="https://picsum.photos/120/120/?random=2" alt="Imagem da Categoria">
-          <h2 class="nome_categoria">FISICO</h2>
-          <p class="descricao_categoria">
-              {{categoria}}
+        <header class = "header">
+          <img class="img_menu"   src="https://picsum.photos/60/60/?random"   alt="imagem de perfil">
+          <div class = "container">
+            <img class="img_perfil" src="https://picsum.photos/120/120/?random" alt="imagem de perfil">
+            <h1 class="name"> ienseS onulA</h1>
+          </div> 
+        </header>  
+        <div class="subbloco1">
+          <h2 class="h2_b1">Físico</h2>
+
+          <p class="texto1">
+            Projeto final de Instrumentação e Medição
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            nstrumentação e Medição
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            
           </p>
         </div>
-      </div>
+        <div class="subbloco2">
+          <img class="img_trabalho" src="https://picsum.photos/860/400/?random" alt="imagem de perfil">
+        </div>
+      </div> 
       <div class="bloco2">
-        <header class="titulo">
-          <h1 class="txt_titulo">- MEUS PROJETOS -</h1>
-        </header>
-        <div class="projetos">
-          {{#each projetos}}
-          <div class="projeto">
-            <h2 class="titulo_projeto">
-              {{@key}}
-            </h2>
-            <a href="projeto.html"><img class="img_projeto" src="https://picsum.photos/120/120/?random=3" alt="Imagem do Projeto">
-            </a>
-            <p class="txt_projeto">
-              {{this.descricao}}
-            </p>
+        <h2 class="h2_b2">Meus Projetos</h2>
+        <div class = "projetos">
+          <div class = "PP">
+            <div class = "Pblock">
+                <h2 class = "h2_b3">Ambulantes</h2>
+                <div class = "Pflex">
+                  <a href = "projetos.html"><img class = "pro_img"src="https://picsum.photos/120/120/?random" alt="imagem de perfil"></a>
+                  <p class="texto2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor
+                  </p>
+                </div>
+              </div>
+
+            <div class = "Pblock">
+                <h2 class = "h2_b3">Elétrico</h2>
+                <div class = "Pflex">
+                  <a href = "projetos.html"><img class = "pro_img"src="https://picsum.photos/120/120/?random" alt="imagem de perfil"></a>
+                  <p class="texto2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+          <div class = "PP">
+            <div class = "Pblock">
+                <h2 class = "h2_b3">GIRAFA</h2>
+                <div class = "Pflex">
+                  <a href = "projetos.html"><img class = "pro_img"src="https://picsum.photos/120/120/?random" alt="imagem de perfil"></a>
+                  <p class="texto2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor
+                  </p>
+                </div>
+              </div>
+            <div class = "Pblock">
+                <h2 class = "h2_b3">METEREOLÓGICO</h2>
+                <div class = "Pflex">
+                  <a href = "projetos.html"><img class = "pro_img"src="https://picsum.photos/120/120/?random" alt="imagem de perfil"></a>
+                  <p class="texto2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor
+                  </p>
+                </div>
+              </div>
           </div>
-          {{/each}}
         </div>
       </div>
-    </div>
-    <div class="contato">
-      <p class="contato_txt">
+      <div class="contatos">
+        <p class="contatos_text">
           | CONTATOS | email: askhdfasiubnfpas@gmail.com | telefone: (99)9999-9999 | endereço: rua sanbdasbçd, numero 999 | CEP: 754896547 |
-    </p>
-    </div>
-    <div class="index_sub">
+        </p>
+      </div>
+
     </div>
   </body>
 </html>
