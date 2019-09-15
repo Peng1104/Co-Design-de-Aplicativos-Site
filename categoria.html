@@ -34,21 +34,26 @@
         </div>
       </div> 
       <div class="bloco2">
-        <h2 class="h2_b2">Meus Projetos</h2>
+        <h2 class="h2_b2">
+        Meus Projetos
+        </h2>
         <div class = "projetos">
           {{#each projetos}}
 
           <div class = "PP">
             <div class = "Pblock">
-                <h2 class = "h2_b3">{{@key}}</h2>
-                <div class = "Pflex">
+              <h2 class = "h2_b3">
+              {{@key}}
+              </h2>
+              <div class = "Pflex">
                   <a href = "projeto.html"><img class ="pro_img" src="https://picsum.photos/860/400/?random" alt="imagem de perfil">
                   </a>
                   <p class="texto2">
                     {{this.descricao}}
                   </p>
-                </div>
               </div>
+            </div>
+          </div>
 
           {{/each}}
         </div>
