@@ -5,7 +5,7 @@
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 2rem;
   grid-template-rows: auto;
-  background-color: #CAE9FD;
+  background-color: #345574;
   grid-template-areas:
   "header . bloco2 bloco2"
   "texto texto bloco2 bloco2"
@@ -39,14 +39,14 @@
   border-style: solid;
   border-radius: 2rem;
   border-width: 0.1rem;
-  background-color: #DDDDDD;
+  background-color: #C8C2C2;
   align-self: center;
   font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   
 }
 .texto {
-  background-color: #7ADCE8;
+  background-color: #E0FFFC;
   grid-area: texto;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@
   grid-area: contato;
   border-style: solid;
   border-width: 0.1rem;
-  background-color: #FF1E01;
+  background-color: #909f9A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +75,7 @@
   border-width: 0.1rem;
   border-color: gray;
   display: flex;
-  background-color: #7ADCE8;
+  background-color: #E0FFFC;
   align-items: center;
   font-family: 'Lato', sans-serif;
 }
@@ -86,7 +86,7 @@
   border-width: 0.1rem;
   border-color: gray;
   display: flex;
-  background-color: #7ADCE8;
+  background-color: #E0FFFC;
   align-items: center;
   font-family: 'Lato', sans-serif;
 }
@@ -97,7 +97,7 @@
   border-width: 0.1rem;
   border-color: gray;
   display: flex;
-  background-color: #7ADCE8;
+  background-color: #E0FFFC;
   align-items: center;
   justify-content: center;
   font-family: 'Lato', sans-serif;
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7ADCE8;
+  background-color: #6a8bb4;
   font-family: 'Cinzel', serif;
   font-size: 1.5rem;
   
@@ -116,7 +116,7 @@
   border-radius: 4.6rem;
   border-style: solid;
   border-width: 0.53rem;
-  border-color: #2B35B3;
+  border-color: #E0FFFC;
 
 }
 .bloco2 {
