@@ -30,7 +30,7 @@
 .img_perfil {
   z-index: 2;
   position: relative;
-  width: 10rem;
+  width: 6rem;
   min-width: 50px; 
   border-style: solid;
   border-radius: 10rem;
@@ -40,14 +40,14 @@
 .img_menu {
   z-index: 1;
   position: relative;
-  max-width: 4rem;
-  min-width: 4rem;
+  max-width: 3rem;
+  min-width: 3rem;
   border-style: solid;
   border-radius: 2.5rem;
   border-width: 2px;
   margin-left: 1rem;
-  top: 2rem;
-  left: 3rem;
+  top: 1rem;
+  left: 1rem;
 }
 .name {
   z-index: 0;
@@ -61,7 +61,7 @@
   font-size: 1.5rem;
   padding: 0.75rem 0.5rem 0.75rem 3rem;
   bottom: 5rem;
-  left: 6rem;
+  left: 2rem;
   margin-right: 3rem;
 }
 .container{
@@ -71,7 +71,7 @@
 .subbloco1 {
   background-color: #E0FFFC;
   border-radius: 30px;
-  margin: 0em 0.5em 0em 0.5em;
+  margin: -3em 0.5em 0em 0.5em;
   padding: 2rem;
 }
 .h2_b1 {
@@ -112,7 +112,7 @@
   grid-column: 2/2;
   align-content: center;
   justify-content: center;
-  padding: 5rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 .h2_b2 {
   display: flex;
@@ -130,7 +130,7 @@
   flex-wrap: wrap;
   background-color: #E0FFFC;
   border-radius: 30px;
-  margin: 6.1rem 0.5em 0em 0.5em;
+  margin: 0rem 0.5em 0em 0.5em;
   padding: 2rem;
 }
 .pro_img {

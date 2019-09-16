@@ -1,0 +1,44 @@
+.tela {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(11,10%);
+  background-color: #345574
+}
+
+.bloco1 {
+  border-style: solid;
+  position: relative;
+  border-width: 2px;
+  grid-row:1/11 ;
+  grid-column: 1/1;
+
+}
+
+.bloco2 {
+  border-style: solid;
+  position: relative;
+  border-width: 2px;
+  grid-row: 1/11;
+  grid-column: 2/2;
+  align-content: center;
+  justify-content: center;
+  padding: 0rem 0rem 0rem 0rem;
+
+}
+
+.contatos {
+  border-style: solid;
+  position: relative;
+  border-width: 2px;
+  grid-area: 11/1 / 11/11;
+  background-color: #909f9A;
+  padding: 5px 0px 0px 0px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
