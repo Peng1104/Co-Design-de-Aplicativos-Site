@@ -1,109 +1,23 @@
-.tela {
-  position: relative;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(11,10%);
-  background-color: #345574
-}
-.bloco1 {
-  border-style: solid;
-  position: relative;
-  border-width: 2px;
-  grid-row:1/11 ;
-  grid-column: 1/1;
-}
-.bloco2 {
-  border-style: solid;
-  position: relative;
-  border-width: 2px;
-  grid-row: 1/11;
-  grid-column: 2/2;
-  align-content: center;
-  justify-content: center;
-  padding: 5rem 0rem 0rem 0rem;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-}
-.img_perfil {
-  z-index: 2;
-  position: relative;
-  width: 6rem;
-  min-width: 50px; 
-  border-style: solid;
-  border-radius: 10rem;
-  border-width: 2px;
-  margin: 1rem 0px 1rem -30px;
-}
-.img_menu {
-  z-index: 1;
-  position: relative;
-  max-width: 3rem;
-  min-width: 3rem;
-  border-style: solid;
-  border-radius: 2.5rem;
-  border-width: 2px;
-  margin-left: 1rem;
-  top: 1rem;
-  left: 1rem;
-}
-.name {
-  z-index: 0;
-  position: relative;
-  border-style: solid;
-  border-radius: 2rem;
-  border-width: 0.1rem;
-  background-color: #C8C2C2;
-  align-self: center;
-  font-family: 'Cinzel', serif;
-  font-size: 1.5rem;
-  padding: 0.75rem 0.5rem 0.75rem 3rem;
-  bottom: 5rem;
-  left: 2rem;
-  margin-right: 3rem;
-}
-.container{
-  margin: 0rem 2rem 0rem 1rem;
-  right: 5rem;
-}
+/*BLOCO 1*/
 .subbloco1 {
-  background-color: #E0FFFC;
-  border-radius: 30px;
   margin: -3em 0.5em 0em 0.5em;
   padding: 2rem;
 }
 .h2_b1 {
   display: flex;
   justify-content: space-around;
-  font-family: 'Cinzel', sans-serif;
-  font-size: 1.5rem; 
   margin: 1rem ;
 }
 .texto1 {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Lato', sans-serif;
 }
 .subbloco2 {
-  background-color: #E0FFFC;
-  border-radius: 30px;
   margin: 1rem;
   padding: 20px;
   bottom: 5px;
 }
 .img_trabalho {
-  z-index: 2;
-  position: relative;
-
-  border-style: solid;
-  border-width: 2px;
-
-  margin: 0px 0px 0px 0px;
-
-  width: 100%;
 }
+/*BLOCO 2*/
 .bloco2 {
   border-style: solid;
   position: relative;
@@ -114,40 +28,28 @@
   justify-content: center;
   padding: 0rem 0rem 0rem 0rem;
 }
+/*titulos em B2*/
 .h2_b2 {
+  padding: 1rem;
+  margin: 1rem;
   display: flex;
   justify-content: space-around;
-  position: relative;
-  background-color: #6a8bb4;
-  margin: 1rem;
-  padding: 1rem;
-  font-family: 'Cinzel', sans-serif;
-  font-size: 1.5rem
 }
+/*divisórias em B2*/
 .projetos {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #E0FFFC;
-  border-radius: 30px;
   margin: 0rem 0.5em 0em 0.5em;
   padding: 2rem;
+  justify-content: space-between;
 }
-.pro_img {
-  position: relative;
-  border-style: solid;
-  border-radius: 10rem;
-  border-width: 2px;
-  width: 7rem;
-  margin: 1rem;
-  right: 5rem;
+/*caixas de categoria*/
+.PP{
+  padding-left: 15%;
+  width: 35%;
 }
 .Pblock {
   display: block;
   margin: 3rem 0rem 3rem 0rem;
-}
-.Pflex{
-  display: flex;
 }
 .h2_b3 {
   display: flex;
@@ -161,11 +63,18 @@
   font-size: 2rem
   width: 100%;
   padding: 1rem 5rem 1rem 5rem;
-
 }
-.PP{
-  padding-left: 15%;
-  width: 35%;
+.Pflex{
+  display: flex;
+}
+.pro_img {
+  position: relative;
+  border-style: solid;
+  border-radius: 10rem;
+  border-width: 2px;
+  width: 7rem;
+  margin: 1rem;
+  right: 5rem;
 }
 .texto2 {
   display: block;
@@ -174,81 +83,8 @@
   top: 2rem;
   right: 5rem;
 }
-.contatos {
-  border-style: solid;
-  position: relative;
-  border-width: 2px;
-  grid-area: 11/1 / 11/11;
-  background-color: #909f9A;
-  padding: 5px 0px 0px 0px;
-}
-.contatos_text {
-  font-family: 'Lato', sans-serif;
-}
+/*MOBILE*/
 @media (max-width: 768px) {
-  .tela {
-    position: relative;
-    background-color: #345574;
-    display: block;
-  }
-  .bloco1 {
-    border-width: 0px;
-    padding: 1rem;
-    display: block;
-  }
-  .contatos {
-    display: block;
-    border-style: solid;
-    position: relative;
-    border-width: 2px;
-    overflow: auto;
-    background-color: #909f9A;
-    padding: 5px 0px 0px 0px;
-  }
-  .img_menu {
-    z-index: 1;
-    position: relative;
-    width:100%;
-    min-width: 30px;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 10px;
-  }
-  .name {
-    z-index: 0;
-    position: relative;
-    border-style: solid;
-    border-radius: 2rem;
-    border-width: 0.1rem;
-    background-color: #C8C2C2;
-    font-family: 'Cinzel', serif;
-    top: -1rem;
-    width: 13rem;
-    left: 1rem;
-  }
-  .h2_b2 {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    background-color: #6a8bb4;
-    font-family: 'Cinzel', sans-serif;
-  }
-  .img_menu {
-    display: none;
-  }
-  .subbloco1 {
-    background-color: #E0FFFC;
-    border-radius: 30px;
-    margin: 0em 0.5em 0em 0.5em;
-    padding: 20px;
-  }
-  .subbloco2 {
-    background-color: #E0FFFC;
-    border-radius: 30px;
-    margin: 20px 20px 0px 20px;
-    padding: 20px;
-    bottom: 5px;
-  }  
   .projetos{
     display: block;
   }
@@ -266,4 +102,5 @@
   }
   .h2_b3{
     right: 2rem;
-  }  
+  }
+}

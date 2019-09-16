@@ -1,0 +1,106 @@
+/*BLOCO 1*/
+.subbloco1 {
+  margin: 0em 0.5em 0em 0.5em;
+  padding: 20px;
+}
+.h2_b1 {
+  margin: 1rem 1rem 1rem 0rem ;
+}
+.texto1 {
+}
+.subbloco2 {
+  margin: 20px 20px 0px 20px;
+  padding: 20px;
+  bottom: 5px;
+}
+.img_trabalho {
+}
+/*BLOCO 2*/
+.bloco2_2{
+  padding: 0em 0.1rem 0em 0em;
+}
+/*titulos em B2*/
+.h2_b2 {
+  padding: 0.5rem 0.5rem 0.5rem 45%;
+  margin: 1rem;
+  align-content: center;
+  justify-content: center;
+}
+/*divisórias em B2*/
+.projetos {
+  position: relative;
+  margin: 0em 1.5em 0em 1.5em;
+  padding: 20px;
+  justify-content: center;
+}
+/*descrição*/
+.texto_cat_alter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  font-family: 'Lato', sans-serif;
+  margin: 0rem 0rem 0rem 1rem;
+}
+/*alunos*/
+.projetoss {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #E0FFFC;
+  position: relative;
+  border-radius: 70px;
+  border-radius: 30px;
+  margin: 0em 1.5em 0em 1.5em;
+  padding: 1rem;
+}
+.img_perfil_alt {
+  z-index: 2;
+  position: relative; ;
+  border-style: solid;
+  border-radius: 60px;
+  border-width: 2px;
+  top: 0.3rem;
+  left: 1rem;
+  margin: 0.5rem 1rem 0rem 0rem;
+}
+/*MOBILE*/
+@media (max-width: 768px) {
+  .projetoss {
+    display: block;
+  }
+  .img_perfil_alt {
+    z-index: 2;
+    position: relative; 
+    display: flex;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 2px;
+    top: 0.3rem;
+    left: 0.3rem;
+    margin: 3rem 1rem 0rem 1rem;
+  }
+  .img_perfil_alt {
+    z-index: 2;
+    position: solid ;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 2px;
+    margin: 0px 0px 0px 0px;
+  }
+  .img_perfil_alt {
+    z-index: 2;
+    position: solid ;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 2px;
+    top: -1rem;
+    left: 0.3rem;
+    margin: 2rem 1rem 0rem 1rem;
+  }
+  .texto_cat_alter {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    font-family: 'Lato', sans-serif;
+  }
+}
