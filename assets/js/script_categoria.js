@@ -13,10 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
   let db = coDesConnect("https://portfolio-5298e.firebaseio.com/")
 
   /*
-    Captura os parametros.
+    Captura os parametros enviados para a pagina
   */
 
-  let categoria = coDesExtract()["categoria"]
+  let parametros = coDesExtract()
+
+  /*
+    Define a categoria da pagina
+  */
+
+  let categoria = parametros["categoria"]
 
   /*
     Muda o titulo da pagina
