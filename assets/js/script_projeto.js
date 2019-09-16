@@ -28,32 +28,46 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   /*
+    Define o projeto a ser abordado
+  */
+
+  let projeto;
+
+  if (parametros.hasOwnProperty("projeto")) {
+    projeto = parametros["projeto"]
+  }
+
+  /*
    Muda os valores dentro do html.
   */
 
   db.download("portfolio", function(data) {
 
     /*
-      Verifica se a data contem a categoria em questão
+      Verifica se a data contem a categoria e o projeto em questão
     */
 
     if (!data.hasOwnProperty(categoria)) {
       console.log("Erro -> Categoria não idendificada");
-      
-      categoria = "fisico"
+
+      categoria = "fisico";
+      projeto = "meteorologico";
+    }
+    if (!data[categoria]["projetos"].hasOwnProperty(projeto)) {
+      console.log("Erro -> Projeto não idendificado");
+
+      categoria = "fisico";
+      projeto = "meteorologico";
     }
 
     /*
       Muda o titulo da pagina
     */
 
-    window.document.title = categoria.charAt(0).toUpperCase() + categoria.slice(1)
+    window.document.title = projeto.charAt(0).toUpperCase() + projeto.slice(1)
 
-    coDesReplace(".h2_b1", categoria)
-    coDesReplace(".texto1", data[categoria])
-
-    document.body.innerHTML = document.body.innerHTML.replace(/qual_categoria/g, categoria)
-
-    coDesReplace(".projetos", data[categoria])
+    coDesReplace(".h2_b1", data[categoria]["projetos"][projeto])
+    coDesReplace(".texto1", data[categoria]["projetos"][projeto])
+    coDesReplace(".bloco2", data[categoria]["projetos"][projeto])
   })
 })
