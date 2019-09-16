@@ -2,7 +2,6 @@
 <html lang="zxx">
 
   <head>
-    <title>Categorias</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link href="assets/css/reset.css" rel="Stylesheet">
@@ -16,9 +15,11 @@
     <div class="tela">
       <div class="bloco1">
         <header class = "header">
-          <img class="img_menu"   src="https://picsum.photos/60/60/?random"   alt="imagem de perfil">
+          <a href="index.html">
+            <img class="img_menu" src="https://picsum.photos/60/60/?random" alt="Imagem para voltar ao index">
+          </a>
           <div class = "container">
-            <img class="img_perfil" src="https://picsum.photos/120/120/?random" alt="imagem de perfil">
+            <img class="img_perfil" src="https://picsum.photos/120/120/?random" alt="Imagem de Perfil">
             <h1 class="name"> ienseS onulA</h1>
           </div> 
         </header>  
@@ -31,7 +32,7 @@
           </p>
         </div>
         <div class="subbloco2">
-          <img class="img_trabalho" src="https://picsum.photos/860/400/?random" alt="imagem de perfil">
+          <img class="img_trabalho" src="https://picsum.photos/860/400/?random" alt="Imagem da Categoria">
         </div>
       </div> 
       <div class="bloco2">
@@ -47,7 +48,8 @@
               {{@key}}
               </h2>
               <div class = "Pflex">
-                  <a href = "projeto.html?cateoria={0}&projeto={{@key}}"><img class ="pro_img" src="https://picsum.photos/860/400/?random" alt="imagem de perfil">
+                  <a href = "projeto.html?cateoria=qual_categoria&projeto={{@key}}">
+                    <img class ="pro_img" src="https://picsum.photos/860/400/?random" alt="Imagem do Projeto">
                   </a>
                   <p class="texto2">
                     {{this.descricao}}

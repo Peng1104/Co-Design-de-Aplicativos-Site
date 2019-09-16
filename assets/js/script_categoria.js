@@ -21,22 +21,36 @@ document.addEventListener('DOMContentLoaded', function() {
   /*
     Define a categoria da pagina
   */
+  let categoria;
 
-  let categoria = parametros["categoria"]
-
-  /*
-    Muda o titulo da pagina
-  */
-
-  window.document.title = categoria.charAt(0).toUpperCase() + categoria.slice(1)
+  if (parametros.hasOwnProperty("categoria")) {
+    categoria = parametros["categoria"]
+  }
 
   /*
    Muda os valores dentro do html.
   */
 
   db.download("portfolio", function(data) {
+
+    /*
+      Verifica se a data contem a categoria em questão
+    */
+
+    if (!data.hasOwnProperty(categoria)) {
+      categoria = "fisico"
+    }
+
+    /*
+    Muda o titulo da pagina
+    */
+
+    window.document.title = categoria.charAt(0).toUpperCase() + categoria.slice(1)
+
     coDesReplace(".h2_b1", categoria)
     coDesReplace(".texto1", data[categoria])
     coDesReplace(".projetos", data[categoria])
+
+    document.body.innerHTML = document.body.innerHTML.replace(/qual_categoria/g, categoria)
   })
 })
