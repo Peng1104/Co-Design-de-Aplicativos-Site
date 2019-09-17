@@ -76,11 +76,11 @@
   margin: 0 auto;
   padding: 1rem;
   max-width: 90%;
-  min-height: 10rem;
+  min-height: 12rem;
 }
 .h2_b1 {
   font-family: 'Cinzel', sans-serif;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 .texto1 {
   display: flex;
@@ -100,12 +100,18 @@
   position: relative;
   background-color: #6a8bb4;
   font-family: 'Cinzel', sans-serif;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  max-width: 95%;
+  padding: 1rem 0;
+  margin: 1rem auto;
 }
 .projetos {
   display: flex;
   background-color: #E0FFFC;
   border-radius: 30px;
+  max-width: 90%;
+  padding: 1rem;
+  margin: 0 auto;
 }
 /*CONTATOS*/
 .contatos {
@@ -122,78 +128,54 @@
   font-family: 'Lato', sans-serif;
 }
 /*MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 60rem) {
   /*MACRO*/
-  .tela {
+  .tela, .bloco1, .bloco2 {
     display: block;
-  }
-  /*BLOCOS*/
-  .bloco1 {
-    border-width: 0px;
-    padding: 1rem;
-    display: block;
-  }
-  .bloco2 {
-    display: block;
-    border-width: 0px;
-    fill: red;
   }
   /*HEADER*/
   .header {
-    margin: 0rem 0rem 1rem 0rem;
-  }
-  .img_menu {
-    display: none;
-  }
-  .container{
-    margin: 0rem 0rem 0rem 0rem;
-    width: 100%
-  }
-  .img_perfil {
-    width: 35%;
-    min-width: 2rem;
-    margin: 0px 0px 0px 0px;
+    justify-content: center;
+    margin: .5rem auto;
   }
   .name {
-    padding: 0.5rem;
-    margin: 0rem 0rem 0.25rem 0rem;
-    justify-content: center;
-    background-color: #DDDDDD;
-    top: 0.5rem;
-    width: 13rem;
-    left: 1rem;
+    margin-bottom: -2rem;
   }
-  /*BLOCO 1*/
-  .subbloco1 {
-    margin: 0em 0.5em 0em 0.5em;
-    padding: 20px;
-  }
-  .subbloco2 {
-    margin: 20px 20px 0px 20px;
-    padding: 20px;
-    bottom: 5px;
-  }
-  /*BLOCO 2*/
-  .bloco2_2{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .h2_b2 {
-    padding: 1rem 1rem 1rem 8rem;
-    margin: 1rem;
+  .subbloco1, .subbloco2 {
+    margin-bottom: 1rem;
+    min-height: auto;
   }
   .projetos {
-    position: relative;
-    border-radius: 70px;
-    margin: 0em 1.5em 1em 1.5em;
-    padding: 20px;
-    justify-content: center;
-    grid-area: 1/1  3/6 ;
+    margin-bottom: 1rem;
   }
   /*CONTATOS*/
   .contatos {
     display: block;
-    overflow: auto;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+}
+/*MOBILE*/
+@media (max-width: 400px) {
+  /*MACRO*/
+  .tela, .bloco1, .bloco2 {
+    display: block;
+  }
+  /*HEADER*/
+  .header {
+    justify-content: center;
+    margin: .5rem auto;
+  }
+  .name {
+    margin-bottom: -2rem;
+  }
+  /*BLOCO 1*/
+  .subbloco1, .subbloco2, .projetos {
+    max-width: 85%;
+  }
+  /*BLOCO 2*/
+  .h2_b2 {
+    max-width: 90%;
   }
 }

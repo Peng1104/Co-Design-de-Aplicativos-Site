@@ -22,30 +22,24 @@
   grid-column: 2/2;
   align-content: center;
   justify-content: center;
-  padding: 0rem 0rem 0rem 0rem;
+  padding: 0;
 }
 /*titulos em B2*/
 .h2_b2 {
-  padding: 1rem;
-  margin: 1rem;
   display: flex;
   justify-content: space-around;
 }
 /*divisórias em B2*/
 .projetos {
   flex-wrap: wrap;
-  margin: 0rem 0.5em 0em 0.5em;
-  padding: 2rem;
   justify-content: space-between;
 }
 /*caixas de categoria*/
 .PP{
-  padding-left: 15%;
-  width: 35%;
+  width: 47.5%;
 }
 .Pblock {
   display: block;
-  margin: 3rem 0rem 3rem 0rem;
 }
 .h2_b3 {
   display: flex;
@@ -58,45 +52,37 @@
   font-family: 'Cinzel', sans-serif;
   font-size: 2rem
   width: 100%;
-  padding: 1rem 5rem 1rem 5rem;
+  padding: 1rem 0;
 }
 .Pflex{
   display: flex;
+  margin-top: .5rem;
+  width: 90%;
+  margin: 1rem auto;
 }
 .pro_img {
   position: relative;
   border-style: solid;
   border-radius: 10rem;
   border-width: 2px;
-  width: 7rem;
-  margin: 1rem;
-  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  float: right;
 }
 .texto2 {
   display: block;
   position: relative;
   font-family: 'Lato', sans-serif;
-  top: 2rem;
-  right: 5rem;
+  text-align: left;
 }
 /*MOBILE*/
-@media (max-width: 768px) {
-  .projetos{
-    display: block;
-  }
-  .PP{
-    position: relative;
-    padding: 0rem;
-    margin: 2rem;
-    width: 100%;
-  }
-  .texto2{
-    right: 2rem;
-  }
-  .pro_img{
-    right: 2rem;
+@media (max-width: 60rem) {
+  .pro_img {
+    width: 8rem;
+    height: 8rem;
   }
   .h2_b3{
-    right: 2rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
   }
 }
