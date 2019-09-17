@@ -55,5 +55,27 @@
 .texto-categoria {
 }
 /*MOBILE*/
-@media (max-width: 768px) {
+@media (max-width: 60rem) {
+  .subbloco1 {
+    margin-bottom: 0rem;
+  }
+  .subbloco2 {
+    margin-bottom: 1rem;
+  }
+  .h2_b1 {
+    margin-left: 0rem;
+  }
+  .texto1 {
+  margin-top: .25rem;
+  margin-left: .5rem;
+  }
+  .projetos {
+    flex-flow: column wrap;
+    padding: .5rem;
+    border-radius: 15px;
+    align-items: center;
+  }
+  .box-categoria {
+    align-self: flex-start;
+  }
 }

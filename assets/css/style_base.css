@@ -76,7 +76,7 @@
   margin: 0 auto;
   padding: 1rem;
   max-width: 90%;
-  min-height: 12rem;
+  min-height: 10rem;
 }
 .h2_b1 {
   font-family: 'Cinzel', sans-serif;
@@ -158,18 +158,6 @@
 }
 /*MOBILE*/
 @media (max-width: 400px) {
-  /*MACRO*/
-  .tela, .bloco1, .bloco2 {
-    display: block;
-  }
-  /*HEADER*/
-  .header {
-    justify-content: center;
-    margin: .5rem auto;
-  }
-  .name {
-    margin-bottom: -2rem;
-  }
   /*BLOCO 1*/
   .subbloco1, .subbloco2, .projetos {
     max-width: 85%;
