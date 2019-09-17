@@ -2,9 +2,6 @@
 .subbloco1 {
   display: flex;
   flex-flow: column wrap;
-  padding: 1rem 0;
-  width: 95%;
-  margin: 0 auto;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -18,7 +15,6 @@
 .subbloco2 {
   display: flex;
   flex-flow: column wrap;
-  padding: 1rem 0;
   width: 95%;
   margin: 0 auto;
   align-items: center;

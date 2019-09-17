@@ -1,7 +1,5 @@
 /*BLOCO 1*/
 .subbloco1 {
-  margin: -3em 0.5em 0em 0.5em;
-  padding: 2rem;
 }
 .h2_b1 {
   display: flex;
@@ -11,9 +9,7 @@
 .texto1 {
 }
 .subbloco2 {
-  margin: 1rem;
-  padding: 20px;
-  bottom: 5px;
+  margin-top: 1rem;
 }
 .img_trabalho {
 }
