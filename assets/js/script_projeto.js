@@ -60,14 +60,16 @@ document.addEventListener('DOMContentLoaded', function() {
       projeto = "meteorologico";
     }
 
+    document.body.innerHTML = document.body.innerHTML.replace(/qual_categoria/g, categoria)
+
     /*
       Muda o titulo da pagina
     */
 
     window.document.title = projeto.charAt(0).toUpperCase() + projeto.slice(1)
 
-    coDesReplace(".h2_b1", data[categoria]["projetos"][projeto])
-    coDesReplace(".texto1", data[categoria]["projetos"][projeto])
+    coDesReplace(".subbloco1", data[categoria]["projetos"][projeto])
+    coDesReplace(".subbloco2", projeto)
     coDesReplace(".bloco2", data[categoria]["projetos"][projeto])
   })
 })

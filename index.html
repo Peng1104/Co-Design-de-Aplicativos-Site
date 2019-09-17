@@ -36,7 +36,7 @@
         </div>
 
         <figure class="subbloco2">
-          <img class="img_trabalho" src="https://picsum.photos/800/440/?random" alt="imagem de perfil">
+          <img class="img_trabalho" src="assets/img/categoria/digital/portfolio.png" alt="Imagem do Portfólio">
         </figure>
       </div>
 
@@ -44,11 +44,11 @@
         <h2 class="h2_b2">
           Categorias
         </h2>
-
         {{#each this}}
+
         <figure class = "projetos">
-          <a href="categoria.html">
-            <img class="image-categoria" src="https://picsum.photos/120/120/?random" alt="imagem de perfil">
+          <a href="categoria.html?categoria={{@key}}">
+            <img class="image-categoria" src="assets/img/categoria/{{@key}}/categoria.png" alt="Imagem da Categorias">
           </a>
           <div class="box-categoria">
             <h3 class="titulo-categoria">
@@ -59,6 +59,7 @@
             </p>
           </div>
         </figure>
+
         {{/each}}
       </div>
 
