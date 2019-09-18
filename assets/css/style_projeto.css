@@ -25,10 +25,11 @@
 }
 /*divisórias em B2*/
 .projetos {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin: 0 1.5em;
   padding: 20px;
-  justify-content: center;
 }
 /*descrição*/
 .texto_cat_alter {
