@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
       projeto = "meteorologico";
     }
     categoria = categoria.toLowerCase()
-    projeto = projeto.toLowerCase()
 
     document.body.innerHTML = document.body.innerHTML.replace(/qual_categoria/g, categoria)
 
