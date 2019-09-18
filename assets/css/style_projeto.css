@@ -30,6 +30,7 @@
   position: relative;
   margin: 0 1.5em;
   padding: 20px;
+  justify-content: space-around;
 }
 /*descrição*/
 .texto_cat_alter {
@@ -68,6 +69,7 @@
   .projetos {
     margin: 0 auto;
     margin-bottom: 1rem;
+    justify-content: space-around;
   }
   .subbloco2 {
     max-width: 85%;

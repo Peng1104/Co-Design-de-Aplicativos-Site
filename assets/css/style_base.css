@@ -10,14 +10,12 @@
 }
 /*BLOCOS*/
 .bloco1 {
-  border-style: solid;
   position: relative;
   border-width: 2px;
   grid-row:1/11 ;
   grid-column: 1/1;
 }
 .bloco2 {
-  border-style: solid;
   position: relative;
   border-width: 2px;
   grid-row: 1/11;
