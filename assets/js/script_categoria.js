@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       categoria = "fisico"
     }
+    categoria = categoria.toLowerCase()
 
     /*
       Muda o titulo da pagina
