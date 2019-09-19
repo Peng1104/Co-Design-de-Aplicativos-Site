@@ -22,7 +22,7 @@
   grid-column: 2/2;
   align-content: center;
   justify-content: center;
-  padding: 1rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 /*HEADER*/
 .header {
@@ -101,7 +101,7 @@
   font-size: 1.5rem;
   max-width: 95%;
   padding: 1rem 0;
-  margin: 1rem auto;
+  margin: 6.5rem 1rem 1rem 1rem ;
 }
 .projetos {
   display: flex;

@@ -29,7 +29,9 @@
 /*titulos em B2*/
 .h2_b2 {
   display: flex;
+  position: relative;
   justify-content: space-around;
+  margin: 3rem 1rem 3.4rem 1rem;
 }
 /*divisórias em B2*/
 .projetos {
